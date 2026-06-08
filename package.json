@@ -1,7 +1,7 @@
 {
-  "name": "@js/queue",
+  "name": "simple-queue-js",
   "version": "1.0.0",
-  "description": "",
+  "description": "A lightweight FIFO queue for JavaScript and TypeScript",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -19,9 +19,15 @@
   "scripts": {
     "build": "tsup"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "queue",
+    "fifo",
+    "data-structure",
+    "typescript",
+    "javascript"
+  ],
+  "author": "Ch1nm4y-8",
+  "license": "MIT",
   "devDependencies": {
     "tsup": "^8.5.1",
     "typescript": "5.9"
