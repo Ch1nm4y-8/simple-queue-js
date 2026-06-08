@@ -1,4 +1,4 @@
-# simple-queue-js
+# @ch1nm4y-8/simple-queue-js
 
 A lightweight FIFO queue for JavaScript and TypeScript.
 
@@ -13,7 +13,7 @@ A lightweight FIFO queue for JavaScript and TypeScript.
 ## Install
 
 ```bash
-npm install simple-queue-js
+npm install @ch1nm4y-8/simple-queue-js
 ```
 
 ---
@@ -21,7 +21,7 @@ npm install simple-queue-js
 ## TypeScript
 
 ```ts
-import { Queue } from "simple-queue-js";
+import { Queue } from "@ch1nm4y-8/simple-queue-js";
 
 const queue = new Queue<number>();
 
@@ -58,7 +58,7 @@ queue.enqueue("hello");
 ## ECMAScript Modules (ESM)
 
 ```js
-import { Queue } from "simple-queue-js";
+import { Queue } from "@ch1nm4y-8/simple-queue-js";
 
 const queue = new Queue();
 
@@ -73,7 +73,7 @@ console.log(queue.dequeue()); // A
 ## CommonJS
 
 ```js
-const { Queue } = require("simple-queue-js");
+const { Queue } = require("@ch1nm4y-8/simple-queue-js");
 
 const queue = new Queue();
 
@@ -87,7 +87,7 @@ console.log(queue.dequeue()); // A
 
 ## API
 
-### 1. enqueue(value)
+### enqueue(value)
 
 Adds an item to the back of the queue.
 
@@ -95,7 +95,15 @@ Adds an item to the back of the queue.
 queue.enqueue(1);
 ```
 
-### 2. dequeue()
+Returns:
+
+```ts
+this;
+```
+
+---
+
+### dequeue()
 
 Removes and returns the front item.
 
@@ -109,7 +117,9 @@ Returns:
 T | undefined;
 ```
 
-### 3. peek()
+---
+
+### peek()
 
 Returns the front item without removing it.
 
@@ -123,7 +133,9 @@ Returns:
 T | undefined;
 ```
 
-### 4. clear()
+---
+
+### clear()
 
 Removes all items from the queue.
 
@@ -131,7 +143,15 @@ Removes all items from the queue.
 queue.clear();
 ```
 
-### 5. size()
+Returns:
+
+```ts
+void
+```
+
+---
+
+### size()
 
 Returns the number of items in the queue.
 
@@ -139,7 +159,15 @@ Returns the number of items in the queue.
 console.log(queue.size());
 ```
 
-### 6. isEmpty()
+Returns:
+
+```ts
+number;
+```
+
+---
+
+### isEmpty()
 
 Returns whether the queue is empty.
 
@@ -147,12 +175,18 @@ Returns whether the queue is empty.
 console.log(queue.isEmpty());
 ```
 
+Returns:
+
+```ts
+boolean;
+```
+
 ---
 
 ## Example
 
 ```ts
-import { Queue } from "simple-queue-js";
+import { Queue } from "@ch1nm4y-8/simple-queue-js";
 
 const tasks = new Queue<string>();
 

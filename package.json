@@ -1,5 +1,5 @@
 {
-  "name": "simple-queue-js",
+  "name": "@ch1nm4y-8/simple-queue-js",
   "version": "1.0.0",
   "description": "A lightweight FIFO queue for JavaScript and TypeScript",
   "type": "module",
@@ -27,6 +27,10 @@
     "javascript"
   ],
   "author": "Ch1nm4y-8",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ch1nm4y-8/Queue"
+  },
   "license": "MIT",
   "devDependencies": {
     "tsup": "^8.5.1",
