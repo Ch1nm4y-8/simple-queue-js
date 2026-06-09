@@ -40,4 +40,18 @@ export class Queue<T> {
   isEmpty(): boolean {
     return this.size() === 0;
   }
+
+  *[Symbol.iterator](): IterableIterator<T> {
+    for (let i = this.#head; i < this.#items.length; i++) {
+      yield this.#items[i];
+    }
+  }
+
+  toArray(): T[] {
+    return this.#items.slice(this.#head);
+  }
+
+  clone(): Queue<T> {
+    return new Queue(this);
+  }
 }
